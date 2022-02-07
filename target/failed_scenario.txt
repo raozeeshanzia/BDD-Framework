@@ -1,0 +1,2 @@
+file:src/test/resources/features/SQAUserManagment.feature:17
+file:src/test/resources/features/Login.feature:13
