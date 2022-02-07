@@ -22,7 +22,6 @@ public class Hooks {
         configReader = new ConfigReader();
         properties = configReader.setProperties();
     }
-
     @Before(order = 1)
     public void launchBrowser(){
         driverFactory = new DriverFactory();
