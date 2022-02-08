@@ -21,6 +21,8 @@ public class Hooks {
     public void getProperty(){
         configReader = new ConfigReader();
         properties = configReader.setProperties();
+        //zeeshan
+
     }
 
     @Before(order = 1)
@@ -28,7 +30,6 @@ public class Hooks {
         driverFactory = new DriverFactory();
         driver = driverFactory.setDriver(properties.getProperty("browser"));
         driver.get("https://rp.zeuscloudconnect.com:8070/DigitalSQA/login.aspx");
-
     }
 
     @After(order = 0)
