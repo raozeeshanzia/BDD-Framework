@@ -21,9 +21,10 @@ public class Hooks {
     public void getProperty(){
         configReader = new ConfigReader();
         properties = configReader.setProperties();
+        //zeeshan
 
-        //Zeeshan is here
     }
+
     @Before(order = 1)
     public void launchBrowser(){
         driverFactory = new DriverFactory();
