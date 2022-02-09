@@ -21,6 +21,7 @@ public class Hooks {
     public void getProperty(){
         configReader = new ConfigReader();
         properties = configReader.setProperties();
+        //add some string
     }
 
     @Before(order = 1)
