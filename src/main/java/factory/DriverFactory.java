@@ -12,6 +12,7 @@ import java.util.HashMap;
 public class DriverFactory {
     private WebDriver driver;
     public String downloadFilepath = "C:\\Users\\Zeeshan Ahmad\\Desktop\\Report";
+    public String Test = "test Code";
 
 
     public static ThreadLocal<WebDriver> tlDriver = new ThreadLocal<>();
