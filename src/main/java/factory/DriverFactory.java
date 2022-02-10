@@ -19,18 +19,11 @@ public class DriverFactory {
 
     public WebDriver setDriver(String browserName){
 
-        switch (browserName.toLowerCase()){
-            case "chrome":
-                setChromeDriver();
-                break;
-            case "firefox":
-                setFirefoxDriver();
-                break;
-            case "edge":
-                setEdgeDriver();
-                break;
-            default:
-                System.out.println("Please pass correct web browser..Thank YOU!");
+        switch (browserName.toLowerCase()) {
+            case "chrome" -> setChromeDriver();
+            case "firefox" -> setFirefoxDriver();
+            case "edge" -> setEdgeDriver();
+            default -> System.out.println("Please pass correct web browser..Thank YOU!");
         }
         getDriver().manage().deleteAllCookies();
         getDriver().manage().window().maximize();
