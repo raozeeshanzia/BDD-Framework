@@ -21,15 +21,14 @@ public class Hooks {
     public void getProperty(){
         configReader = new ConfigReader();
         properties = configReader.setProperties();
-        //add some string
-        //zeeshan
+
     }
 
     @Before(order = 1)
     public void launchBrowser(){
         driverFactory = new DriverFactory();
         driver = driverFactory.setDriver(properties.getProperty("browser"));
-        driver.get("https://rp.zeuscloudconnect.com:8070/DigitalSQA/login.aspx");
+        driver.get("https://boardgamegeek.com/");
     }
 
     @After(order = 0)

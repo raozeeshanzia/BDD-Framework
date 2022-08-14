@@ -16,7 +16,6 @@ import org.junit.runner.RunWith;
         }
         //tags = "@test" sai@advanceditsol.com
 
-
 )
 
 public class MyRunner  {
